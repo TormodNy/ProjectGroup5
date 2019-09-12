@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+header{
+  width: 750px;
+  margin: auto;
+}
+
+.box{
+  width: 750px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+#bilde{
+  display: block;
+  margin: auto;
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 5px #aaaaaa;
+}
+
+footer{
+  margin: 10px;
+}
