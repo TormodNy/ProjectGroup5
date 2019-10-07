@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>P2 Design Guidelines</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>P2 Design Guidelines</h1>
+      <h2>Fredrik, Henrik, Henrik, Martin and Tormod</h2>
+      <time datetime="2019-10-07 12:00">07.10.2019</time>
+      <hr/>
+    </header>
+
+    <div class="box">
+      <h2>1. Administrative Details</h2>
+      <p>Client Name: Rob Boss</p>
+      <p>Website Name: Joy of Picturing</p>
+    </div>
+
+    <div class="box">
+      <h2>2. Purpose, goals and audience</h2>
+      <p>
+        The purpose of the website is to display a gallery of images that Rob has taken, and make it possible to buy
+        various prints of these images. The website should make the customer interested in buying the pictures.
+        We want to make it possible to contact the photographer, see the prices and purchase pictures.
+
+        The target audience of the webpage are people who are looking for quality photographs. Whether they just like
+        to browse, find background images for their phone, or are looking to make their living room a tiny bit less boring,
+        this site will help them achieve their goal.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>3. Navigation Structure</h2>
+      <p>
+        Every page of Rob's website will contain a navigation bar with links to every other page, except
+        for the shop page. This page is only accessible from the gallery after the user chooses a picture
+        they wish to buy. However, since the navigation bar will be present on the shop page, it is possible
+        to navigate to all other pages from this one.
+      </p>
+      <p>
+        We settled on this site structure because we wanted the customer to easily navigate from one page
+        to any other page. For example: If a customer sees a picture he likes, but wants information about what
+        different print sizes would cost, he should not have to go back to the homepage to find a link to the
+        price guidelines page. Other than the gallery and the shop page, none of the pages are especially related
+        to each other. Therefore, we decided it would not make sense to use a strictly linear or hierarchical
+        site structure.
+
+      </p>
+      <figure>
+        <img src="img/navigationstructure.png" alt="Navigation Structure"/>
+        <figcaption>Figure 1: A diagram of the website's navigation structure</figcaption>
+      </figure>
+
+    </div>
+
+    <div class="box">
+      <h2>4. Page Layout and Appearance</h2>
+      <p>
+          The goal when making the website's universal design, was to make the pages look as simple and clean
+          as possible. The design should also be easy to understand, with buttons leading you to the page you expected.
+          We want to have Rob's photographs in focus and make the users interested in buying them,
+          so the website's design should not grab the attention of the users, but serve as a good looking and
+          functional foundation.
+      </p>
+      <figure>
+          <img src="img/mockup.png" alt="Page Layout"/>
+          <figcaption>Figure 2: Mockup of the Page Layout</figcaption>
+      </figure>
+      <p>
+          These are the specific universal styles we will use. Note that we have not added any sizes, because
+          we won't know exactly what sizes work best until we actually make the website in HTML and CSS.
+       </p>
+      <ul>
+          <li>Font: "Roboto". With fallback to "Arial" and "sans-serif". Size: 12px</li>
+          <li>Colors:
+              <ul>
+                  <li>Text: Dark grey: #222222.</li>
+                  <li>Background: Off-white: #fafaff.</li>
+                  <li>Links: Desaturated blue: #5555ff.</li>
+                  <li>Visited links: Desaturated purple: #a339a3</li>
+              </ul>
+          </li>
+          <li>
+              The body width will be 100% of the browser windows because we want pictures, for example on the homepage,
+              to use the whole width of the window. Text will be placed in div elements with a smaller width.
+          </li>
+          <li>
+              The navigation bar will be placed at the top of the page and be the same color as the body. It will use
+              fixed position to always keep it on the top of the page. To separate it from the body we will use
+              a box-shadow as a border. It will have four buttons linking to different pages on the right, and
+              the name of the website on the left. We might make a logo to replace the website's name,
+              and we will have it link to the homepage. The text in the navigation bar will be bold, and they will use
+              CSS transitions to show the user when the button is active.
+          </li>
+          <li>
+              At the bottom of the page we will have a footer with a Copyright warning. The footer will also have
+              the same color as the body, but separated by a border with the color #aaaaaa. The footer should be pushed
+              to the bottom of the page by all the other content.
+          </li>
+
+      </ul>
+
+    </div>
+
+    <div class="box">
+      <h2>5. Content</h2>
+      <p> The website will consist of five different pages: </p>
+      <h3>Home: index.html</h3>
+
+        <figure>
+          <img src="img/homepage.png" alt="Price Guidelines"/>
+          <figcaption>Figure 3: Homepage Mockup</figcaption>
+        </figure>
+
+        <p>
+            The homepage is the page first shown to the user when they go on the website. It will display the website's title
+            and have a big slideshow covering the page, displaying a few pictures from the gallery, and fulfill the goal of
+            intruiging the user to explore more of the webpage and potentially become a customer.
+        </p>
+        <p>It will fulfill the goal of </p>
+      <h3>Gallery: gallery.html</h3>
+
+          <figure>
+            <img src="img/gallery_mockup.png" alt="Price Guidelines"/>
+            <figcaption>Figure 4: Gallery Mockup</figcaption>
+          </figure>
+
+        <p>
+            The gallery page will show Rob Boss' photographs. This will fulfill the goal of displaying Rob's photos and
+            make the users interested in buying pictures. They will be displayed with three pictures in each row, and
+            in a smaller resolution than the original files. More pictures should load while the user is scrolling
+            down. By loading some pictures at a time, we hope to reduce the total loading times of the webpage.
+            If the user clicks a photo, a window with a larger version of the picture should appear,
+            along with a button for buying the picture and another one for going back to scrolling the gallery.
+        </p>
+      <h3>Shop: shop.html</h3>
+          <figure>
+            <img src="img/shopform.png" alt="Price Guidelines"/>
+            <figcaption>Figure 5: Shop Form Mockup</figcaption>
+          </figure>
+        <p>
+            The shop page will display a form for choosing the material and size for the print the customer wants
+            to buy, and for the customers personal information required for shipping and billing. The page will fulfill
+            the goal of being able to sell prints of Rob's pictures. When the form is filled out and the user clicks the
+            submit button, the page will display a copy of the order details, telling the customer that their order is placed.
+        </p>
+      <h3>Price Guidelines: prices.html</h3>
+
+        <figure>
+          <img src="img/priceguidelines.png" alt="Price Guidelines"/>
+          <figcaption>Figure 6: Price Guidelines Mockup</figcaption>
+        </figure>
+
+        <p>
+          The price guidelines page will show a table of sizes and printable materials. It will fulfill the goal
+          of making the user aware of the prices. The pictures can be printed on standard paper, photo paper,
+          high quality paper, cardboard and durable silk poster material. If we have more time left after
+          making the minimum requirements we will have a button that is going to change the size unit.
+          Clicking the button will make the table switch between showing centimeters and inches.
+        </p>
+
+      <h3>About and Contact: about.html</h3>
+          <figure>
+            <img src="img/about.png" alt="Price Guidelines"/>
+            <figcaption>Figure 7: About Mockup</figcaption>
+          </figure>
+          <p>
+              The “About” page will inform the customer about contact info, Rob Boss, his work and the store. It will
+              fulfill the goal of making it possible to contact Rob Boss, and information about the photographer might
+              intrigue potential customers to buy a print from him.
+          </p>
+          <p>
+              The page will use the universal page layout like the other pages. It should be easy to distinguish the
+              section about Rob Boss, and the section about the store/webpage itself. Additionally the contact info
+              should be easily accessible, therefore we will place it at the top of the page.
+              There will also be an image of Rob Boss placed next to the text-section about him. The «about Rob Boss»
+              section will be located beneath the contact info section, and the «about us» section will be below
+              «about Rob Boss». There will be headers which clearly distinguish the two parts.
+          </p>
+    </div>
+
+    <div class="box">
+      <h2>6. Minimum Requirements</h2>
+      <p>To fulfill the minimum requirements we will make these Javascript applications:</p>
+      <ol>
+          <li>
+            A Javascript function that allows the use of a submit form function, this will be used
+            when the user wants to register/buy a picture from the gallery, the submit form
+            function will also be used in the «contact info» section where a user can send an
+            email to Rob Boss. When the user then presses submit the page will read the input
+            and reply with a message.
+          </li>
+          <li>
+            Another Javascript function is a gallery slideshow, this will be used on the home
+            page. The pictures will be shown in a random fashion, this way we can show the
+            users a preview of the pictures the gallery has to offer. This will intrigue the users so
+            that they are more likely to be interested in buying a picture.
+          </li>
+          <li>
+            A Javascript function that will enable a pop up window for the pictures in the gallery,
+            this will be used so that the users can view the pictures in a greater detail.
+            Additionally the pop up window will show a button to the picture with a buy/add to
+            cart option.
+          </li>
+          <li>
+            The gallery will have a lot of pictures, therefore we will use a Javascript function
+            which will enable us to only load the pictures which are shown on the screen, and
+            as the users scrolls down more pictures will be loaded. This is important for the
+            page to initially load faster.
+          </li>
+      </ol>
+      <p>
+          We will also create a modularity Javascript function that adds a navigation bar and a footer.
+      </p>
+      <p>
+          If we have a have time left we might add a Javascript function that converts the size unit in
+          the price table to centimeters and inches.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>7. Plan</h2>
+      <h3>Files and Folders</h3>
+      <ul>
+        <li>index.html</li>
+        <li>gallery.html</li>
+        <li>shop.html</li>
+        <li>prices.html</li>
+        <li>about.html</li>
+        <li>img/
+            <ul>
+                <li>pictures
+                    <ul>
+                        <li>picture1.png</li>
+                        <li>picture2.png</li>
+                        <li>picture3.png</li>
+                        <li>picture4.png</li>
+                        <li>...</li>
+                        <li>picture30.png</li>
+                    </ul>
+                </li>
+                <li>thumbnail
+                    <ul>
+                        <li>thumbnail1.png</li>
+                        <li>thumbnail2.png</li>
+                        <li>thumbnail3.png</li>
+                        <li>thumbnail4.png</li>
+                        <li>...</li>
+                        <li>thumbnail30.png</li>
+                    </ul>
+                </li>
+                <li>robboss.png</li>
+                <li>logo.png</li>
+            </ul>
+        </li>
+        <li>scripts/
+            <ul>
+                <li>modularity.js</li>
+                <li>shopForm.js</li>
+                <li>slideshow.js</li>
+                <li>galleryLoader.js</li>
+                <li>picturePopUp.js</li>
+                <li>(priceUnit.js)</li>
+            </ul>
+        </li>
+        <li>style/
+            <ul>
+                <li>style.css</li>
+                <li>homestyle.css</li>
+                <li>gallerystyle.css</li>
+                <li>shopstyle.css</li>
+                <li>pricestyle.css</li>
+                <li>aboutstyle.css</li>
+            </ul>
+        </li>
+      </ul>
+
+      <h3>Who and when?</h3>
+      <table>
+        <tr>
+            <th>Filename</th>
+            <th>Description</th>
+            <th>In charge</th>
+            <th>Deadline</th>
+        </tr>
+        <tr>
+            <td>index.html</td>
+            <td>Homepage</td>
+            <td>Henrik L.</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>gallery.html</td>
+            <td>Displaying pictures</td>
+            <td>Henrik W.</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>shop.html</td>
+            <td>Form for ordering prints</td>
+            <td>Tormod</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>prices.html</td>
+            <td>Table displaying the prices of the prints</td>
+            <td>Fredrik</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>about.html</td>
+            <td>Information about Rob Boss and contact details</td>
+            <td>Martin</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>modularity.js</td>
+            <td>Adds navigation bar and footer to all pages</td>
+            <td>Everyone</td>
+            <td>14.10.19</td>
+        </tr>
+        <tr>
+            <td>style.css</td>
+            <td>The general style of the whole website</td>
+            <td>Everyone</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>homestyle.css</td>
+            <td>Style of the homepage</td>
+            <td>Henrik L.</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>gallerystyle.css</td>
+            <td>Style of the gallery</td>
+            <td>Henrik W.</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>shopstyle.css</td>
+            <td>Style of the shop form</td>
+            <td>Tormod</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>pricestyle.css</td>
+            <td>Style of price table</td>
+            <td>Fredrik</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>aboutstyle.css</td>
+            <td>Style of the about page</td>
+            <td>Martin</td>
+            <td>21.10.19</td>
+        </tr>
+        <tr>
+            <td>shopForm.js</td>
+            <td>Submits the order and displays the details to the user</td>
+            <td>Tormod</td>
+            <td>28.10.19</td>
+        </tr>
+        <tr>
+            <td>slideshow.js</td>
+            <td>Slideshow displaying images on the homepage</td>
+            <td>Henrik L.</td>
+            <td>28.10.19</td>
+        </tr>
+        <tr>
+            <td>galleryLoader.js</td>
+            <td>Loads more images in the gallery</td>
+            <td>Henrik W. and Martin</td>
+            <td>28.10.19</td>
+        </tr>
+        <tr>
+            <td>picturePopUp.js</td>
+            <td>Displays a picture at high resolution when clicked with option to buy print</td>
+            <td>Fredrik</td>
+            <td>28.10.19</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>Fredrik, Henrik, Henrik, Martin and Tormod</footer>
+  </body>
+</html>
