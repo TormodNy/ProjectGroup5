@@ -1,0 +1,46 @@
+html, body{
+    font-family: "Roboto", "Arial", sans-serif;
+    width: 100%;
+    margin: 0;
+    background-color: #fafaff;
+    color: #222222;
+}
+
+#navbar{
+    /*border-bottom: 1px solid #aaaaaa;*/
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+}
+
+p{
+    display: inline-block;
+    margin-top: 10px;
+}
+#joy{
+    margin-left: 10px;
+}
+
+.navbutton{
+    float: right;
+    margin-right: 15px;
+}
+
+footer{
+    width: 100%;
+    border-top: 1px solid #aaaaaa;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+a{
+    color: #5555ff;
+}
+
+a:visited{
+    color: #a339a3;
+}
