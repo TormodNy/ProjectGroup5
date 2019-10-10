@@ -26,13 +26,30 @@ p{
 
 .navbutton{
     float: right;
-    margin-right: 15px;
+    margin-top: 0;
+    background-color: #fafaff;
+    transition: background-color 0.4s;
+    height: calc(100% - 10px);
+    padding: 10px 10px 0 10px;
+}
+
+.navbutton a{
+    color: #222222;
+    text-decoration: none;
+}
+
+.navbutton a:visited{
+    color: #222222;
+}
+
+.navbutton:hover{
+    background-color: #ddddff;
 }
 
 footer{
     width: 100%;
     border-top: 1px solid #aaaaaa;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
 }
