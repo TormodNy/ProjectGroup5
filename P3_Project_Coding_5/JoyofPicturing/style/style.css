@@ -14,6 +14,7 @@ body{
 
 #navbar{
     /*border-bottom: 1px solid #aaaaaa;*/
+    background-color: inherit;
     font-weight: bold;
     font-size: 1.5em;
     height: 50px;
@@ -55,6 +56,7 @@ body{
 }
 
 footer{
+    background-color: inherit;
     width: 100%;
     border-top: 1px solid #aaaaaa;
     position: absolute;
