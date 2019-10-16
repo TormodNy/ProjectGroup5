@@ -1,7 +1,13 @@
-html, body{
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
     font-family: "Roboto", "Arial", sans-serif;
     width: 100%;
-    margin: 0;
+    margin: 0 0 50px;
+    padding: 50px 0 25px;
     background-color: #fafaff;
     color: #222222;
 }
@@ -14,14 +20,16 @@ html, body{
     width: 100%;
     margin: auto;
     box-shadow: 0 0 5px 1px #aaaaaa;
+    position: fixed;
+    top: 0;
 }
 
-p{
+#navbar p{
     display: inline-block;
-    margin-top: 10px;
 }
 #joy{
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .navbutton{
@@ -49,7 +57,8 @@ p{
 footer{
     width: 100%;
     border-top: 1px solid #aaaaaa;
-    position: fixed;
+    position: absolute;
+    height: 50px;
     bottom: 0;
     text-align: center;
 }
@@ -60,4 +69,9 @@ a{
 
 a:visited{
     color: #a339a3;
+}
+
+div{
+    width: 50%;
+    margin: auto;
 }
