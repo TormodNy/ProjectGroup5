@@ -9,12 +9,12 @@
         <link href="style/shopstyle.css" type="text/css" rel="stylesheet" />
 
     </head>
-    
+
     <body>
 
         <form id="shopcontent" action="shop.html" method="post">
 
-            <h2 id="productInfo">Product Information</h2>
+            <h2 id="productInfo" class="wrap">Product Information</h2>
 
             <label id="productSpan1">
                 Print Material
@@ -34,24 +34,24 @@
                 </select>
             </label>
 
-            <h2 id="customerInfo">Customer Information</h2>
+            <h2 id="customerInfo" class="wrap">Customer Information</h2>
 
-            <label id="customerName">
+            <label id="customerName" class="wrap">
                 Name
                 <input type="text" name="name" required/>
             </label>
 
-            <label id="customerEmail">
+            <label id="customerEmail" class="wrap">
                 E-mail
                 <input type="email" name="email" required/>
             </label>
 
-            <label id="customerCountry">
+            <label id="customerCountry" class="wrap">
                 Country
                 <input type="text" name="country" required/>
             </label>
 
-            <label id="customerAddress">
+            <label id="customerAddress" class="wrap">
                 Address
                 <input type="text" name="address" required/>
             </label>
@@ -66,7 +66,7 @@
                 <input type="number" name="postal" min="0" required/>
             </label>
 
-            <input type="submit" name="submit" value="Confirm"/>
+            <input type="submit" class="wrap" name="submit" value="Confirm"/>
 
         </form>
 
