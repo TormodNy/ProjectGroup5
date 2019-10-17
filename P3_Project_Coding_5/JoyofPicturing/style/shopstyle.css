@@ -1,0 +1,58 @@
+#shopcontent{
+    width: 33%;
+    margin: auto;
+    display: grid;
+    grid-template: 60px 60px 40px repeat(5, 60px) 40px / 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-auto-flow: row;
+}
+
+.wrap{
+    grid-column: 1 / span 2;
+}
+
+h2{
+    text-align: center;
+}
+
+#customerInfo{
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select{
+    font-family: "Roboto", "Arial", sans-serif;
+    padding: 5px;
+    border: solid 1px #aaaaaa;
+    color: #222222;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="submit"]{
+    padding: 5px;
+    background-color: #222222;
+    color: #fafaff;
+    border: solid 3px #333333;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+}
+
+tr{
+    padding: 15px;
+}
+
+td{
+    min-width: 200px;
+}
+
+input[type="submit"]:active{
+    background-color: #444444;
+}

@@ -1,38 +1,66 @@
-html, body{
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
     font-family: "Roboto", "Arial", sans-serif;
     width: 100%;
-    margin: 0;
+    margin: 0 0 50px;
+    padding: 50px 0 25px;
     background-color: #fafaff;
     color: #222222;
 }
 
 #navbar{
     /*border-bottom: 1px solid #aaaaaa;*/
+    background-color: inherit;
     font-weight: bold;
     font-size: 1.5em;
     height: 50px;
     width: 100%;
     margin: auto;
     box-shadow: 0 0 5px 1px #aaaaaa;
+    position: fixed;
+    top: 0;
 }
 
-p{
+#navbar p{
     display: inline-block;
-    margin-top: 10px;
 }
 #joy{
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .navbutton{
     float: right;
-    margin-right: 15px;
+    margin-top: 0;
+    background-color: #fafaff;
+    transition: background-color 0.4s;
+    height: calc(100% - 10px);
+    padding: 10px 10px 0 10px;
+}
+
+.navbutton a{
+    color: #222222;
+    text-decoration: none;
+}
+
+.navbutton a:visited{
+    color: #222222;
+}
+
+.navbutton:hover{
+    background-color: #ddddff;
 }
 
 footer{
+    background-color: inherit;
     width: 100%;
     border-top: 1px solid #aaaaaa;
     position: absolute;
+    height: 50px;
     bottom: 0;
     text-align: center;
 }
@@ -43,4 +71,9 @@ a{
 
 a:visited{
     color: #a339a3;
+}
+
+div{
+    width: 50%;
+    margin: auto;
 }
