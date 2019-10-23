@@ -13,7 +13,7 @@ body{
 }
 
 #navbar{
-    /*border-bottom: 1px solid #aaaaaa;*/
+    border-bottom: 1px solid #aaaaaa;
     background-color: inherit;
     font-weight: bold;
     font-size: 1.5em;
@@ -34,6 +34,7 @@ body{
 }
 
 .navbutton{
+    color:black;
     float: right;
     margin-top: 0;
     background-color: #fafaff;
@@ -41,6 +42,16 @@ body{
     height: calc(100% - 10px);
     padding: 10px 10px 0 10px;
 }
+
+/* .navbutton::after {   tried adding lines between each navbutton
+    content: ''; 
+    position: absolute; 
+    right: 0; 
+    top: .6em; 
+    bottom: .6em; 
+    width: 1px; 
+    background-color: grey;
+} */
 
 .navbutton a{
     color: #222222;
@@ -74,6 +85,6 @@ a:visited{
 }
 
 div{
-    width: 50%;
+    /* width: 50%; */
     margin: auto;
 }
