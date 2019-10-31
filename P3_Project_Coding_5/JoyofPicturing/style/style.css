@@ -29,8 +29,10 @@ body{
     display: inline-block;
 }
 #joy{
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 55px;
+    float: left;
 }
 
 .navbutton{
@@ -44,12 +46,12 @@ body{
 }
 
 /* .navbutton::after {   tried adding lines between each navbutton
-    content: ''; 
-    position: absolute; 
-    right: 0; 
-    top: .6em; 
-    bottom: .6em; 
-    width: 1px; 
+    content: '';
+    position: absolute;
+    right: 0;
+    top: .6em;
+    bottom: .6em;
+    width: 1px;
     background-color: grey;
 } */
 
@@ -85,6 +87,6 @@ a:visited{
 }
 
 div{
-    /* width: 50%; */
+    width: 50%;
     margin: auto;
 }
