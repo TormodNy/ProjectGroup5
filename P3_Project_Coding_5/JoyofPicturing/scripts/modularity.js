@@ -1,15 +1,48 @@
-let bodyEl = document.querySelector('body');
+const bodyEl = document.querySelector('body');
 
-// moved the a element outside the p element so that the link applies to the whole p-element,
-// not the text
+const navBar = makeElement("header", "", "navbar");
 
-bodyEl.innerHTML += '<header id="navbar">'
-                    + '<p id="joy">Joy of Picturing</p>'
-                    + '<a href="about.html"><p id="about" class="navbutton">ABOUT & CONTACT</p></a>'
-                    + '<a href="prices.html"><p id="prices" class="navbutton">PRICES</p></a>'
-                    + '<a href="gallery.html"><p id="gallery" class="navbutton">GALLERY</p></a>'
-                    + '<a href="index.html"><p id="home" class="navbutton">HOME</p></a>'
-                    + '</header>'
-                    + '<footer>'
-                    + '<p>&#9400; Copyright 2019. All rights reserved.</p>'
-                    + '</footer>';
+const logo = makeElement("img", "", "joy");
+logo.src = "img/rb_logo_black.svg";
+navBar.appendChild(logo);
+
+const navButtons = ["about", "prices", "gallery", "home"];
+for (let i = 0; i < 4; i++){
+    newA = makeElement("a");
+    newA.appendChild(makeElement("p", navButtons[i].toUpperCase(), navButtons[i], "navbutton"));
+
+    if(i != 3){
+        newA.href = navButtons[i] + ".html";
+    }else{
+        newA.href = "index.html";
+    }
+
+    navBar.appendChild(newA);
+}
+
+bodyEl.appendChild(navBar);
+
+const footer = makeElement("footer");
+footer.appendChild(makeElement("p", "Copyright 2019. All rights reserved."));
+
+bodyEl.appendChild(footer);
+
+//Custom function for making elements faster
+function makeElement (element, text="", id="", className="") {
+    const newElement = document.createElement(element);
+
+    if(text != ""){
+        newText = document.createTextNode(text);
+        newElement.appendChild(newText);
+    }
+
+    if(id != ""){
+        newElement.id = id;
+    }
+
+    if(className != ""){
+        newElement.className = className;
+    }
+
+    return newElement;
+}

@@ -1,7 +1,8 @@
 .gallery {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,20vw);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 20vw);
 }
 
 .imgWrapper {
@@ -12,9 +13,9 @@
 }
 
 .galleryImg {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .imgWrapper:hover {
