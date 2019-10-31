@@ -12,7 +12,6 @@ for (var i=1;i<imgNr;i++) {
     imgEl.id="img"+i;
     imgWrapperEl.appendChild(imgEl);
     
-    
     // galleryEl.innerHTML+="<div class='imgWrapper'><img src='img/resized/"+i+".jpg' id='img"+i+"' class='galleryImg'></div>";
 }
 
