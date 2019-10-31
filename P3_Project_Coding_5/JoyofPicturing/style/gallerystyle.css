@@ -1,7 +1,3 @@
-* {
-    /* position:relative; */
-}
-
 .gallery {
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -9,7 +5,10 @@
 }
 
 .imgWrapper {
-    transition: opacity 0.5s, transform 0.5s; /*adding a transition for a better visual user experience*/    
+    transition: opacity 0.5s; /*adding a transition for a better visual user experience*/    
+    height:100%;
+    width:100%;
+    overflow:hidden;
 }
 
 .galleryImg {
@@ -22,5 +21,4 @@
     opacity:0.5;
     cursor:pointer;
     /* transform:scale(1.1) */
-    /* z-index:-1; */
 }
