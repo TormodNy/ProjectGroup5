@@ -4,8 +4,22 @@ img {
     width: 250px;
 }
 
+div{
+    background-color: #fafaff;
+    vertical-align: top;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+body{
+    background-position:center;
+    background-image: url("../img/homepage/img3.jpg");
+    background-attachment: fixed;
+
+
 @media (orientation: portrait), (max-width: 600px){
     h2{
         margin-top: 70px;
     }
 }
+
