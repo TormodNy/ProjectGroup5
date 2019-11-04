@@ -105,6 +105,9 @@ div{
 }
 
 @media (orientation: portrait), (max-width: 900px){
+    body{
+        background-image: none;
+    }
     div{
         width: 90%;
     }
