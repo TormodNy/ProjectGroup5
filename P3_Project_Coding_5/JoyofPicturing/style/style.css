@@ -28,6 +28,7 @@ body{
 #navbar p{
     display: inline-block;
 }
+
 #joy{
     margin-left: 5px;
     margin-top: 5px;
@@ -89,4 +90,22 @@ a:visited{
 div{
     width: 50%;
     margin: auto;
+}
+
+@media (orientation: portrait){
+    #navbar{
+        height: 100px;
+        font-size: 3.5em;
+    }
+
+    #joy{
+        width: 110px;
+        margin-top: 11px;
+    }
+}
+
+@media (orientation: portrait), (max-width: 900px){
+    div{
+        width: 90%;
+    }
 }
