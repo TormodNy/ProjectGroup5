@@ -9,7 +9,7 @@
   </head>
   <body>
       <div class="img" id="img3">
-        
+
       </div>
     <div>
       <h1>Price table</h1>
@@ -44,7 +44,7 @@
         </tr>
         <tr>
           <td>Thin cardboard</td>
-          <td>7$</th>
+          <td>7$</td>
           <td>10$</td>
           <td>12$</td>
           <td>15$</td>
@@ -68,9 +68,8 @@
 
       <h2>Prices</h2>
       <form>
-        Print material:
+        <h3>Print material:</h3>
         <br />
-        standard paper
         <input
           type="radio"
           name="print"
@@ -79,7 +78,7 @@
           class="paper"
           checked
         />
-        photo papir
+        <label>Standard paper</label>
         <input
           type="radio"
           name="print"
@@ -87,7 +86,7 @@
           onchange="total_price()"
           class="paper"
         />
-        high qualty paper
+        <label>Photo paper</label>
         <input
           type="radio"
           name="print"
@@ -95,7 +94,7 @@
           onchange="total_price()"
           class="paper"
         />
-        thin cardboard
+        <label>High quality paper</label>
         <input
           type="radio"
           name="print"
@@ -103,7 +102,8 @@
           onchange="total_price()"
           class="paper"
         />
-        durable silk poster
+        <label>Thin cardboard</label>
+
         <input
           type="radio"
           name="print"
@@ -111,10 +111,11 @@
           onchange="total_price()"
           class="paper"
         />
+        <label>Durable silk poster</label>
+
         <hr />
-        Size:
+        <h3>Size:</h3>
         <br />
-        Small (5"x7")
         <input
           type="radio"
           name="size"
@@ -122,7 +123,8 @@
           onchange="total_price()"
           class="size"
         />
-        Normal (8"x10")
+        <label>Small (5"x7")</label>
+
         <input
           type="radio"
           name="size"
@@ -131,7 +133,8 @@
           class="size"
           checked
         />
-        Large (10"x13")
+        <label>Normal (8"x10")</label>
+
         <input
           type="radio"
           name="size"
@@ -139,7 +142,8 @@
           onchange="total_price()"
           class="size"
         />
-        Huge (20"x24")
+        <label>Large (10"x13")</label>
+
         <input
           type="radio"
           name="size"
@@ -147,10 +151,12 @@
           onchange="total_price()"
           class="size"
         />
+        <label>Huge (20"x24")</label>
+
         <hr />
-        Frame:
+        <h3>Frame:</h3>
         <br />
-        no frame
+
         <input
           type="radio"
           name="frame"
@@ -159,7 +165,8 @@
           class="frame"
           checked
         />
-        Steel
+        <label>No frame</label>
+
         <input
           type="radio"
           name="frame"
@@ -167,7 +174,8 @@
           onchange="total_price()"
           class="frame"
         />
-        Wood
+        <label>Steel</label>
+
         <input
           type="radio"
           name="frame"
@@ -175,7 +183,8 @@
           onchange="total_price()"
           class="frame"
         />
-        Copper
+        <label>Wood</label>
+
         <input
           type="radio"
           name="frame"
@@ -183,7 +192,8 @@
           onchange="total_price()"
           class="frame"
         />
-        Gold
+        <label>Copper</label>
+
         <input
           type="radio"
           name="frame"
@@ -191,14 +201,15 @@
           onchange="total_price()"
           class="frame"
         />
+        <label>Gold</label>
+
         <br />
         <hr />
         Price:
         <input type="text" name="price" value="20" id="output" disabled /> $
       </form>
-
     </div>
-    
+
     <script src="scripts/modularity.js"></script>
     <script src="scripts/prices.js"></script>
   </body>
