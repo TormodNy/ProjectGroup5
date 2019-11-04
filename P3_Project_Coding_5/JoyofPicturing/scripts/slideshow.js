@@ -19,5 +19,4 @@ function changeImage () {
     bildeIndex ++;
     bildeIndex %= bildefiler.length;
     bilder[whichToChange].style.backgroundImage = "url(" + bildefiler[bildeIndex] + ")";
-    console.log(bildeIndex);
 }

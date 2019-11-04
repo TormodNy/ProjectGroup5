@@ -4,7 +4,10 @@ const navBar = makeElement("header", "", "navbar");
 
 const logo = makeElement("img", "", "joy");
 logo.src = "img/rb_logo_black.svg";
-navBar.appendChild(logo);
+const logoLink = makeElement("a")
+logoLink.href = "index.html";
+logoLink.appendChild(logo);
+navBar.appendChild(logoLink);
 
 const navButtons = ["about", "prices", "gallery", "home"];
 for (let i = 0; i < 4; i++){
