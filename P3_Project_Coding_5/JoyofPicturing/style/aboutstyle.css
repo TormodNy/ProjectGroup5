@@ -4,3 +4,14 @@ img {
     padding-left: 10px;
     width: 250px;
 }
+div{
+    background-color: #fafaff;
+    vertical-align: top;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+body{
+    background-position:center;
+    background-image: url("../img/homepage/img3.jpg");
+    background-attachment: fixed;

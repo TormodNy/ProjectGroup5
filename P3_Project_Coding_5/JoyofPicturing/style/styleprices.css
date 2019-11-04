@@ -1,0 +1,38 @@
+body{
+        background-position:center;
+        background-image:url("../img/homepage/img2.jpg");
+        background-attachment: fixed;
+      
+}
+div{
+    background-color: #fafaff;
+    vertical-align: top;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+th{
+    height: 30px;
+    background-color:#fafaff;
+    ;
+}
+td{
+    height: 30px;
+    
+}
+table, th, td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    
+}
+tr:nth-child(even) {background-color: #ececf3;}
+
+
+
