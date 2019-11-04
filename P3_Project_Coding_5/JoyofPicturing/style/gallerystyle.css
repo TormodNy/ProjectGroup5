@@ -26,3 +26,10 @@
     opacity: 0.5;
     cursor: pointer;
 }
+
+@media (orientation: portrait), (max-width: 600px){
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 60vw);
+    }
+}
