@@ -1,10 +1,35 @@
+body{
+    background-position:center;
+    background-image:url("../img/homepage/img2.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 #shopcontent{
+    position: relative;
     width: 33%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template: 60px 60px 40px repeat(5, 60px) 40px / 1fr 1fr;
     grid-column-gap: 25px;
     grid-auto-flow: row;
+    background-color: #fafaff;
+    padding: 15px 50px 15px 50px;
+}
+
+div{
+    width: 33%;
+    padding: 15px 50px 15px 50px;
+    background-color: #fafaff;
+    position: relative;
+    margin-bottom: -50px;
+    z-index: -2;
+}
+
+#details{
+    height: 82vh;
+    z-index: -1;
 }
 
 .wrap{
@@ -26,6 +51,7 @@ input[type="text"], input[type="number"], input[type="email"], select{
     color: #222222;
     width: 100%;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 input::-webkit-outer-spin-button,
@@ -55,4 +81,14 @@ td{
 
 input[type="submit"]:active{
     background-color: #444444;
+}
+
+@media (orientation: portrait), (max-width: 900px){
+    #shopcontent{
+        width: 90%;
+        margin-top: 80px;
+    }
+    body{
+        background-image: none;
+    }
 }

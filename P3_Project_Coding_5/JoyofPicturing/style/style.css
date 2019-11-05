@@ -5,6 +5,7 @@ html{
 
 body{
     font-family: "Roboto", "Arial", sans-serif;
+    font-weight: bold;
     width: 100%;
     margin: 0 0 50px;
     padding: 50px 0 25px;
@@ -14,7 +15,7 @@ body{
 
 #navbar{
     border-bottom: 1px solid #aaaaaa;
-    background-color: inherit;
+    background-color: #fafaff;
     font-weight: bold;
     font-size: 1.5em;
     height: 50px;
@@ -45,16 +46,6 @@ body{
     height: calc(100% - 10px);
     padding: 10px 10px 0 10px;
 }
-
-/* .navbutton::after {   tried adding lines between each navbutton
-    content: '';
-    position: absolute;
-    right: 0;
-    top: .6em;
-    bottom: .6em;
-    width: 1px;
-    background-color: grey;
-} */
 
 .navbutton a{
     color: #222222;
@@ -92,7 +83,8 @@ div{
     margin: auto;
 }
 
-@media (orientation: portrait){
+/* Tried having an extra tall navigation bar for mobile phones. It kind of worked. */
+/*@media (orientation: portrait) and (min-resolution: 230dpi){
     #navbar{
         height: 100px;
         font-size: 3.5em;
@@ -102,9 +94,12 @@ div{
         width: 110px;
         margin-top: 11px;
     }
-}
+}*/
 
 @media (orientation: portrait), (max-width: 900px){
+    body{
+        background-image: none;
+    }
     div{
         width: 90%;
     }

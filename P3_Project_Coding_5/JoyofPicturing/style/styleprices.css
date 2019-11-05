@@ -1,16 +1,17 @@
 body{
-        background-position:center;
-        background-image:url("../img/homepage/img2.jpg");
-        background-attachment: fixed;
-      
+    background-position:center;
+    background-image:url("../img/homepage/img2.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
 }
+
 div{
     background-color: #fafaff;
     vertical-align: top;
-    padding: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 15px 50px 15px 50px;
+    margin-bottom: -25px;
 }
+
 table{
     width: 100%;
     text-align: left;
@@ -21,18 +22,27 @@ table{
 th{
     height: 30px;
     background-color:#fafaff;
-    ;
 }
 td{
     height: 30px;
-    
+
 }
 table, th, td {
     padding: 5px;
     border-bottom: 1px solid #ddd;
-    
+
 }
-tr:nth-child(even) {background-color: #ececf3;}
 
+tr:nth-child(even) {
+    background-color: #ececf3;
+}
 
+h3{
+    margin-bottom: -10px;
+}
 
+@media (orientation: portrait), (max-width: 900px){
+    body{
+        background-image: none;
+    }
+}

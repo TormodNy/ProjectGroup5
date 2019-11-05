@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document.getElementById("arrowdown")).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -8,25 +9,29 @@ $(document.getElementById("arrowdown")).on('click', 'a[href^="#"]', function (ev
 
 const bildeKarusellEl = document.querySelector("#bildeKarusell");
 const tid = 6000;
+=======
+const slideshowEl = document.querySelector("#slideshow");
+const timer = 6000;
+>>>>>>> master
 
-let bildeIndex = 1;
+let photoIndex = 1;
 
-const bildefiler = ["img/resized/1.jpg", "img/resized/2.jpg", "img/resized/3.jpg", "img/resized/4.jpg"];
+const photoFiles = ["img/resized/1.jpg", "img/resized/2.jpg", "img/resized/3.jpg", "img/resized/4.jpg"];
 
-const bilder = document.querySelectorAll(".bilde");
+const photoEl = document.querySelectorAll(".photo");
 
-bilder[1].style.animation = "fade 6s alternate infinite";
-bilder[0].style.backgroundImage = "url(" + bildefiler[bildeIndex - 1] + ")";
-bilder[1].style.backgroundImage = "url(" + bildefiler[bildeIndex] + ")";
+photoEl[1].style.animation = "fade 6s alternate infinite";
+photoEl[0].style.backgroundImage = "url(" + photoFiles[photoIndex - 1] + ")";
+photoEl[1].style.backgroundImage = "url(" + photoFiles[photoIndex] + ")";
 
-setInterval(changeImage, tid);
+setInterval(changeImage, timer);
 whichToChange = 1;
 
 function changeImage () {
     whichToChange = 1 - whichToChange;
-    bildeIndex ++;
-    bildeIndex %= bildefiler.length;
-    bilder[whichToChange].style.backgroundImage = "url(" + bildefiler[bildeIndex] + ")";
+    photoIndex ++;
+    photoIndex %= photoFiles.length;
+    photoEl[whichToChange].style.backgroundImage = "url(" + photoFiles[photoIndex] + ")";
 }
 
 
