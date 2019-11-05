@@ -65,8 +65,19 @@ function preview(e) {
     //exits preview if user clicks outside of the preview element or the x
     closePreviewEl.addEventListener("click", exitPreview);
     backgroundDivEl.addEventListener("click", exitPreview);
+    bodyEl.addEventListener("keydown", exitPreviewEsc);
+
     function exitPreview() {
         previewDivEl.parentElement.removeChild(previewDivEl);
         backgroundDivEl.parentElement.removeChild(backgroundDivEl);
     }
+
+    function exitPreviewEsc(e) {
+        if(e.keyCode == 27) {
+            previewDivEl.parentElement.removeChild(previewDivEl);
+            backgroundDivEl.parentElement.removeChild(backgroundDivEl);
+        }   
+
+    }
+
 }
