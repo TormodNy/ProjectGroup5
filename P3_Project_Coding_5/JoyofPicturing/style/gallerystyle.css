@@ -95,14 +95,14 @@
 }
 
 .closePreviewButton {
+    display:flex;
+    justify-content: center;
     position:relative;
-    bottom:1vw;
-    left:10vw;
+    bottom:2.1vw;
+    left:19.8vw;
     width:15%;
-    border-style:none;
-    color:black;
-    font-weight:bold;
-    font-size:1.2vw;
+    margin: 0 0 0 0;
+    padding: 0.5vw 0 0.5vw 0;
 }
 
 .closePreviewButton:hover {
