@@ -10,11 +10,11 @@ for (var i = 1; i <= imgNr; i++) {
     newDiv.appendChild(newImg);
     galleryEl.appendChild(newDiv);
 
-    newImg.addEventListener("click", previewFunction);
+    newImg.addEventListener("click", preview);
 }
 
 
-function previewFunction(e) {
+function preview(e) {
     const bodyEl = document.querySelector("body");
 
     const previewText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque est tortor, sagittis nec enim id, euismod tempus dolor. Duis malesuada mauris ut dui aliquam, eu condimentum ligula consequat. Phasellus sodales ut massa eget egestas. Nunc pretium pellentesque tellus, a vulputate orci volutpat vitae. Duis nunc ante, tempor ac vulputate bibendum, posuere ac nulla. Phasellus turpis mauris, iaculis sit amet odio quis, auctor rhoncus ante. Aliquam facilisis pellentesque magna. Curabitur felis nunc, aliquam sit amet velit non, porttitor scelerisque nisl.";
@@ -31,6 +31,7 @@ function previewFunction(e) {
     const previewTextEl = makeElement("node", previewText, "", "previewText");//text element
     const previewButtonEl = makeElement("button", "", "", "previewButton"); //purchase button
     const closePreviewEl = makeElement("div", "", "", "closePreviewButton"); //close window button
+
     // finished creating elements
 
 
@@ -50,13 +51,6 @@ function previewFunction(e) {
         location.href="shop.html";
     }
 
-    //exits preview if user clicks outside of the preview element or the x
-    closePreviewEl.addEventListener("click", exitPreview);
-    backgroundDivEl.addEventListener("click", exitPreview);
-    function exitPreview(){
-        location.href="gallery.html";
-    }
-
     //appending all the elements to the preview div
     previewDivEl.appendChild(imgWrapperEl);
     previewDivEl.appendChild(contentWrapperEl);
@@ -66,5 +60,13 @@ function previewFunction(e) {
     contentWrapperEl.appendChild(previewButtonEl);
 
     //appending preview div to body
-    bodyEl.appendChild(previewDivEl);
+    bodyEl.appendChild(previewDivEl);    
+
+    //exits preview if user clicks outside of the preview element or the x
+    closePreviewEl.addEventListener("click", exitPreview);
+    backgroundDivEl.addEventListener("click", exitPreview);
+    function exitPreview() {
+        previewDivEl.parentElement.removeChild(previewDivEl);
+        backgroundDivEl.parentElement.removeChild(backgroundDivEl);
+    }
 }
