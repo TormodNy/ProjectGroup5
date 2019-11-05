@@ -86,7 +86,7 @@ a{
   transition:opacity 0.2s;
 }
 
-#bildeKarusell:hover {
+#slideshow:hover {
   opacity:0.8;
   cursor: pointer;
 }
