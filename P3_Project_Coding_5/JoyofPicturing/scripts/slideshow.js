@@ -26,4 +26,4 @@ function changeImage () {
 //Go to gallery when clicking the slideshow
 slideshowEl.addEventListener("click", () => {
     location.href="gallery.html";
-}
+});
