@@ -1,5 +1,6 @@
 const bodyEl = document.querySelector('body');
 
+//Defining the navbar
 const navBar = makeElement("header", "", "navbar");
 
 //Making the logo
@@ -30,11 +31,16 @@ bodyEl.appendChild(navBar);
 //Making the footer
 const footer = makeElement("footer");
 footer.appendChild(makeElement("p", "Copyright 2019. All rights reserved."));
-
 bodyEl.appendChild(footer);
 
 //Custom function for making elements faster
-function makeElement (element, text="", id="", className="") {
+function makeElement (element, text, id, className) {
+
+    //Internet explorer doesn't like default values:
+    text = text || "";
+    id = id || "";
+    className = className || "";
+
     const newElement = document.createElement(element);
 
     if(text != ""){
