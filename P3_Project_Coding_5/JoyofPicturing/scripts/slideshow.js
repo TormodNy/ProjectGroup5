@@ -22,7 +22,7 @@ function changeImage () {
 }
 
 
-bildeKarusellEl.addEventListener("click", goToGallery);
+slideshowEl.addEventListener("click", goToGallery);
 
 function goToGallery(){
     location.href="gallery.html";
