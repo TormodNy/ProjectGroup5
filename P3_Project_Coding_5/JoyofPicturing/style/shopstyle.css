@@ -5,17 +5,8 @@ body{
     background-size: 100%;
 }
 
-#shopcontent{
-    position: relative;
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template: 60px 60px 40px repeat(5, 60px) 40px / 1fr 1fr;
-    grid-column-gap: 25px;
-    grid-auto-flow: row;
-    background-color: #fafaff;
-    padding: 15px 50px 15px 50px;
+h2{
+    text-align: center;
 }
 
 div{
@@ -25,23 +16,6 @@ div{
     position: relative;
     margin-bottom: -50px;
     z-index: -2;
-}
-
-#details{
-    height: 82vh;
-    z-index: -1;
-}
-
-.wrap{
-    grid-column: 1 / span 2;
-}
-
-h2{
-    text-align: center;
-}
-
-#customerInfo{
-    margin-top: 10px;
 }
 
 input[type="text"], input[type="number"], input[type="email"], select{
@@ -71,6 +45,10 @@ input[type="submit"]{
     font-size: 1em;
 }
 
+input[type="submit"]:active{
+    background-color: #444444;
+}
+
 tr{
     padding: 15px;
 }
@@ -79,16 +57,38 @@ td{
     min-width: 200px;
 }
 
-input[type="submit"]:active{
-    background-color: #444444;
+.wrap{
+    grid-column: 1 / span 2;
+}
+
+#shopcontent{
+    position: relative;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 60px 60px 40px repeat(5, 60px) 40px / 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-auto-flow: row;
+    background-color: #fafaff;
+    padding: 15px 50px 15px 50px;
+}
+
+#details{
+    height: 82vh;
+    z-index: -1;
+}
+
+#customerInfo{
+    margin-top: 10px;
 }
 
 @media (orientation: portrait), (max-width: 900px){
+    body{
+        background-image: none;
+    }
     #shopcontent{
         width: 90%;
         margin-top: 80px;
-    }
-    body{
-        background-image: none;
     }
 }

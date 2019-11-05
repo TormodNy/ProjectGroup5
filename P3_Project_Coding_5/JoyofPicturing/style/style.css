@@ -13,28 +13,27 @@ body{
     color: #222222;
 }
 
-#navbar{
-    border-bottom: 1px solid #aaaaaa;
-    background-color: #fafaff;
-    font-weight: bold;
-    font-size: 1.5em;
-    height: 50px;
+footer{
+    background-color: inherit;
     width: 100%;
+    border-top: 1px solid #aaaaaa;
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    text-align: center;
+}
+
+a{
+    color: #5555ff;
+}
+
+a:visited{
+    color: #a339a3;
+}
+
+div{
+    width: 50%;
     margin: auto;
-    box-shadow: 0 0 5px 1px #aaaaaa;
-    position: fixed;
-    top: 0;
-}
-
-#navbar p{
-    display: inline-block;
-}
-
-#joy{
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 55px;
-    float: left;
 }
 
 .navbutton{
@@ -60,27 +59,37 @@ body{
     background-color: #ddddff;
 }
 
-footer{
-    background-color: inherit;
-    width: 100%;
-    border-top: 1px solid #aaaaaa;
-    position: absolute;
+#navbar{
+    border-bottom: 1px solid #aaaaaa;
+    background-color: #fafaff;
+    font-weight: bold;
+    font-size: 1.5em;
     height: 50px;
-    bottom: 0;
-    text-align: center;
-}
-
-a{
-    color: #5555ff;
-}
-
-a:visited{
-    color: #a339a3;
-}
-
-div{
-    width: 50%;
+    width: 100%;
     margin: auto;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+    position: fixed;
+    top: 0;
+}
+
+#navbar p{
+    display: inline-block;
+}
+
+#joy{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 55px;
+    float: left;
+}
+
+@media (orientation: portrait), (max-width: 900px){
+    body{
+        background-image: none;
+    }
+    div{
+        width: 90%;
+    }
 }
 
 /* Tried having an extra tall navigation bar for mobile phones. It kind of worked. */
@@ -95,12 +104,3 @@ div{
         margin-top: 11px;
     }
 }*/
-
-@media (orientation: portrait), (max-width: 900px){
-    body{
-        background-image: none;
-    }
-    div{
-        width: 90%;
-    }
-}

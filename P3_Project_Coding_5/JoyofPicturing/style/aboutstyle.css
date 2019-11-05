@@ -1,23 +1,19 @@
-img {
-    float:right;
-    padding-left: 10px;
-    width: 250px;
+body{
+    background-position: center;
+    background-image: url("../img/homepage/img3.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 div{
-    position:relative;
     background-color: #fafaff;
-    vertical-align: top;
     padding: 15px 50px 15px 50px;
-    margin-bottom: -25px;
 }
 
-body{
-    position: absolute;
-    background-position:center;
-    background-image: url("../img/background/img3.jpg");
-    background-attachment: fixed;
-    background-size: 100%;
+#rob {
+    float: right;
+    padding-left: 10px;
+    width: 250px;
 }
 
 @media (orientation: portrait), (max-width: 600px){
@@ -26,5 +22,9 @@ body{
     }
     body{
         background-image: none;
+    }
+    #rob {
+        float: initial;
+        margin-left: 16%;
     }
 }
