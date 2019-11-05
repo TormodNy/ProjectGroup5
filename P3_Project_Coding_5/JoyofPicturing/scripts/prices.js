@@ -1,3 +1,4 @@
+//Updates the price based on which radio button is selected
 function update_price(array, price) {
   for (let i = 0; i < array.length; i++) {
     if (array[i].checked) {
@@ -6,7 +7,8 @@ function update_price(array, price) {
   }
 }
 
-function total_price() {
+//Calculates the total price
+function total_price () {
   let standard_price = 20;
 
   const print = document.getElementsByClassName("paper");

@@ -1,7 +1,7 @@
-const imgNr=13; //indicates how many images are to be added
+const imgNr = 13; //indicates how many images are to be added
 const galleryEl = document.querySelector(".gallery");
 
-for (var i=1;i<=imgNr;i++) {    
+for (var i = 1; i <= imgNr; i++) {
     const newDiv = makeElement("div", "", "", "imgWrapper");
     const newImg = makeElement("img", "", "img" + i, "galleryImg")
     newImg.src = "img/resized/" + i + ".jpg";
@@ -10,7 +10,6 @@ for (var i=1;i<=imgNr;i++) {
     galleryEl.appendChild(newDiv);
 
     newImg.addEventListener("click", previewFunction);
-
 }
 
 
@@ -39,7 +38,7 @@ function previewFunction(e) {
     //adding text to the buttons
     previewButtonEl.innerHTML="PURCHASE";
     closePreviewEl.innerHTML="X";
-    
+
 
     // appending all elements to the body or div element
     bodyEl.appendChild(backgroundDivEl);

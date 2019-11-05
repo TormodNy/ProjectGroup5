@@ -2,6 +2,7 @@ const bodyEl = document.querySelector('body');
 
 const navBar = makeElement("header", "", "navbar");
 
+//Making the logo
 const logo = makeElement("img", "", "joy");
 logo.src = "img/rb_logo_black.svg";
 const logoLink = makeElement("a")
@@ -9,6 +10,7 @@ logoLink.href = "index.html";
 logoLink.appendChild(logo);
 navBar.appendChild(logoLink);
 
+//Making the buttons in the navbar
 const navButtons = ["about", "prices", "gallery", "home"];
 for (let i = 0; i < 4; i++){
     newA = makeElement("a");
@@ -25,6 +27,7 @@ for (let i = 0; i < 4; i++){
 
 bodyEl.appendChild(navBar);
 
+//Making the footer
 const footer = makeElement("footer");
 footer.appendChild(makeElement("p", "Copyright 2019. All rights reserved."));
 
