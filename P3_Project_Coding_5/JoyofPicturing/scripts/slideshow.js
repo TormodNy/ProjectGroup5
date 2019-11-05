@@ -20,3 +20,10 @@ function changeImage () {
     photoIndex %= photoFiles.length;
     photoEl[whichToChange].style.backgroundImage = "url(" + photoFiles[photoIndex] + ")";
 }
+
+
+bildeKarusellEl.addEventListener("click", goToGallery);
+
+function goToGallery(){
+    location.href="gallery.html";
+}
