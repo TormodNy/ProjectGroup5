@@ -15,7 +15,7 @@ div{
 body{
     position: absolute;
     background-position:center;
-    background-image: url("../img/homepage/img3.jpg");
+    background-image: url("../img/background/img3.jpg");
     background-attachment: fixed;
     background-size: 100%;
 }

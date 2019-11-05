@@ -1,7 +1,8 @@
-const imgNr = 13; //indicates how many images are to be added
+const imgNr = 14; //indicates how many images are to be added
 const galleryEl = document.querySelector(".gallery");
 
 for (var i = 1; i <= imgNr; i++) {
+    //adding images and creating div elements
     const newDiv = makeElement("div", "", "", "imgWrapper");
     const newImg = makeElement("img", "", "img" + i, "galleryImg")
     newImg.src = "img/resized/" + i + ".jpg";
