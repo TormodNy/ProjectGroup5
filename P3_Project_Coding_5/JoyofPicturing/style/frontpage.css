@@ -23,14 +23,14 @@ h1 {
     margin: 15px;
 }
 
+a{
+    font-weight: bolder;
+}
+
 .blank {
     display: inline-block;
     width: 75%;
     margin: 6% auto 6%;
-}
-
-a{
-    font-weight: bolder;
 }
 
 .img {
@@ -43,52 +43,6 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  #img1 {
-    background-image: url("../img/homepage/img1.jpg");
-  }
-
-  #img2 {
-    background-image: url("../img/homepage/img2.jpg");
-  }
-
-  #img3 {
-    background-image: url("../img/homepage/img3.jpg");
-  }
-
-/* SCROLL FADE IN ANIMATION */
-#arrowdown {
-  width: 10%;
-  margin-top: 88vh;
-  animation-duration: 1s;
-  animation-name: scrolldown;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
-
-
-@keyframes scrolldown {
-    from {
-      transform: scale(.85,.85)}
-    to {
-      transform: scale(1,1);
-    }
-}
-
-#slideshow {
-  margin-top: 75px;
-  margin-bottom: 25px;
-  width: 100%;
-  height: 75%;
-  position: relative;
-  transition:opacity 0.2s;
-}
-
-#slideshow:hover {
-  opacity:0.8;
-  cursor: pointer;
 }
 
 .photo {
@@ -107,6 +61,51 @@ a{
   left: 0;
   top: 0;
   background-repeat: no-repeat;
+}
+
+#img1 {
+background-image: url("../img/homepage/img1.jpg");
+}
+
+#img2 {
+background-image: url("../img/homepage/img2.jpg");
+}
+
+#img3 {
+background-image: url("../img/homepage/img3.jpg");
+}
+
+/* SCROLL FADE IN ANIMATION */
+#arrowdown {
+  width: 10%;
+  margin-top: 88vh;
+  animation-duration: 1s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+#slideshow {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 75%;
+  position: relative;
+  transition:opacity 0.2s;
+}
+
+#slideshow:hover {
+  opacity:0.8;
+  cursor: pointer;
+}
+
+@keyframes scrolldown {
+    from {
+      transform: scale(.85,.85)}
+    to {
+      transform: scale(1,1);
+    }
 }
 
 @keyframes fade {
