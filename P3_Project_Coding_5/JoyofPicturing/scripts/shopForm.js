@@ -18,5 +18,5 @@ formEl.addEventListener("submit", (e) => {
     formEl.style.display = "none";
 
     //Prints the order details to the body
-    bodyEl.innerHTML += "<div><h2>Order details</h2><p>Your order has been placed successfully.</p> <table>" + text + "</table></div>";
+    bodyEl.innerHTML += "<div id='details'><h2>Order details</h2><p>Your order has been placed successfully.</p> <table>" + text + "</table></div>";
 });

@@ -15,15 +15,23 @@ body{
     grid-column-gap: 25px;
     grid-auto-flow: row;
     background-color: #fafaff;
-    padding: 15px 50px 15px 50px; 
+    padding: 15px 50px 15px 50px;
 }
+
 div{
     width: 33%;
-    padding: 15px 50px 15px 50px; 
+    padding: 15px 50px 15px 50px;
     background-color: #fafaff;
     position: relative;
     margin-bottom: -50px;
+    z-index: -2;
 }
+
+#details{
+    height: 82vh;
+    z-index: -1;
+}
+
 .wrap{
     grid-column: 1 / span 2;
 }
@@ -43,6 +51,7 @@ input[type="text"], input[type="number"], input[type="email"], select{
     color: #222222;
     width: 100%;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 input::-webkit-outer-spin-button,
