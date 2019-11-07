@@ -10,7 +10,7 @@
     <header>
       <h1>P3 Design Changes</h1>
       <h2>Fredrik, Henrik, Henrik, Martin and Tormod</h2>
-      <time datetime="2019-10-31 12:00">31.10.2019</time>
+      <time datetime="2019-11-07 12:00">07.11.2019</time>
       <hr/>
     </header>
 
@@ -23,7 +23,85 @@
 
     <div class="box">
       <h2>Design Changes</h2>
-      <p></p>
+
+      <h3>General changes</h3>
+      <p>
+          We added a logo on the left side of the navigation bar, replacing the text that was shown in the mockups.
+      </p>
+
+      <h3>Changes to index.html: </h3>
+      <p>
+            Instead of displaying the websites title in a big font, it displays one of the pictures covering the screen.
+            There's an arrow at the bottom that prompts the user to scroll down, where he/she is greeted by more information
+            and more pictures. Also, instead of having the slideshow cover the whole page, we have a separate section further
+            down on the page containing the slideshow that also links to the gallery page.
+      </p>
+
+      <h3>Changes to gallery.html: </h3>
+      <p>
+            There are no changes to the display of the gallery.
+      </p>
+
+      <h3>Changes to shop.html: </h3>
+      <p>
+          In the shop page, the prices page, and the about page we decided to add background images.
+          This was to make the webpage more stylish and pleasant to look at. We did not include the line which
+          separated product information and customer information shown in the mockup. Other than this
+          we followed layout of the mockup.
+      </p>
+
+      <h3>Changes to prices.html: </h3>
+      <p>
+          As previously mentioned we changed added a background picture the prices page. We decided not to have a
+          button for converting units, but added an interactive tool that calculates the price given by frame material,
+          print material and size.
+      </p>
+
+      <h3>Changes to about.html: </h3>
+      <p>
+          As mentioned earlier we decided to add a background image to several of the pages, including about.html. We also decided
+          to not have a contact form, but instead listed the contact information. For the rest of the page we followed the layout
+          of the mockup.
+      </p>
+
+      <h3>Changes to 1. required JS, shopForm.js:</h3>
+      <p>
+          The submit function is not changed much from the design, but we decided not to use it on the contact page, and instead
+          we just listed the necessary contact information with a 'mailto' link. When the user submits the form he is prompted
+          with a message saying the order was successful and shown the information he put into the form.
+      </p>
+
+      <h3>Changes to 2. required JS, slideshow.js:</h3>
+      <p>
+          We haven't made any big changes to the slideshow. It consists of two elements where one of them fades in and
+          out using CSS animations.
+      </p>
+
+      <h3>Changes to 3. required JS, gallery.js (previously picturePopUp.js):</h3>
+      <p>
+          Changed the popup window so that it contains text in addition to the buttons for purchasing the picture and
+          exiting the popup window. Apart from that no further changes were made.
+      </p>
+
+      <h3>Changes to 4. required JS, gallery.js (previously galleryLoader.js):</h3>
+      <p>
+          The galleryloader starts adding the pictures to website as while the page is loading. When scrolling down it will
+          add more and more pictures up to a certain threshold. These pictures are the same 14 images, but are selected randomly.
+          This is because we used a limited number of pictures, but the function can be changed to continue showing new photos
+          if there are more to show.
+      </p>
+
+      <h3>Added a 5. JS, prices.js:</h3>
+      <p>
+          Added prices.js that calculates the total price of the print from the user input using a form.
+      </p>
+
+      <h3>Modularity</h3>
+      <p>
+          We used Javascript to add modularity to the webpage. The JS file 'modularity.js' appends a navigation bar to the top
+          of the page and a footer to the bottom. We decided to make a custom function called 'makeElement' to shorten the process
+          of creating elements.
+      </p>
     </div>
 
     <div class="box">
@@ -36,28 +114,27 @@
         <li>about.html</li>
         <li>img/
             <ul>
-                <li>pictures
+                <li>homepage
                     <ul>
-                        <li>picture1.png</li>
-                        <li>picture2.png</li>
-                        <li>picture3.png</li>
-                        <li>picture4.png</li>
-                        <li>...</li>
-                        <li>picture30.png</li>
+                        <li>arrowdown.png</li>
+                        <li>img1.jpg</li>
+                        <li>img2.jpg</li>
+                        <li>img3.jpg</li>
                     </ul>
                 </li>
-                <li>thumbnail
+                <li>gallery
                     <ul>
-                        <li>thumbnail1.png</li>
-                        <li>thumbnail2.png</li>
-                        <li>thumbnail3.png</li>
-                        <li>thumbnail4.png</li>
+                        <li>1.jpg</li>
+                        <li>2.jpg</li>
+                        <li>3.jpg</li>
+                        <li>4.jpg</li>
                         <li>...</li>
-                        <li>thumbnail30.png</li>
+                        <li>14.jpg</li>
                     </ul>
                 </li>
+                <li>favicon.png</li>
                 <li>robboss.png</li>
-                <li>logo.png</li>
+                <li>tb_logo_black.svg</li>
             </ul>
         </li>
         <li>scripts/
@@ -65,9 +142,8 @@
                 <li>modularity.js</li>
                 <li>shopForm.js</li>
                 <li>slideshow.js</li>
-                <li>galleryLoader.js</li>
-                <li>picturePopUp.js</li>
-                <li>(priceUnit.js)</li>
+                <li>gallery.js</li>
+                <li>prices.js</li>
             </ul>
         </li>
         <li>style/
@@ -82,109 +158,106 @@
         </li>
       </ul>
 
-      <h3>Who and when?</h3>
       <table>
         <tr>
             <th>Filename</th>
             <th>Description</th>
             <th>In charge</th>
-            <th>Deadline</th>
         </tr>
         <tr>
             <td>index.html</td>
             <td>Homepage</td>
             <td>Henrik L.</td>
-            <td>14.10.19</td>
         </tr>
         <tr>
             <td>gallery.html</td>
             <td>Displaying pictures</td>
             <td>Henrik W.</td>
-            <td>14.10.19</td>
         </tr>
         <tr>
             <td>shop.html</td>
             <td>Form for ordering prints</td>
             <td>Tormod</td>
-            <td>14.10.19</td>
         </tr>
         <tr>
             <td>prices.html</td>
             <td>Table displaying the prices of the prints</td>
             <td>Fredrik</td>
-            <td>14.10.19</td>
         </tr>
         <tr>
             <td>about.html</td>
             <td>Information about Rob Boss and contact details</td>
             <td>Martin</td>
-            <td>14.10.19</td>
         </tr>
         <tr>
             <td>modularity.js</td>
             <td>Adds navigation bar and footer to all pages</td>
-            <td>Everyone</td>
-            <td>14.10.19</td>
+            <td>Tormod</td>
         </tr>
         <tr>
             <td>style.css</td>
             <td>The general style of the whole website</td>
             <td>Everyone</td>
-            <td>21.10.19</td>
         </tr>
         <tr>
-            <td>homestyle.css</td>
+            <td>frontpage.css</td>
             <td>Style of the homepage</td>
             <td>Henrik L.</td>
-            <td>21.10.19</td>
         </tr>
         <tr>
             <td>gallerystyle.css</td>
             <td>Style of the gallery</td>
             <td>Henrik W.</td>
-            <td>21.10.19</td>
         </tr>
         <tr>
             <td>shopstyle.css</td>
             <td>Style of the shop form</td>
             <td>Tormod</td>
-            <td>21.10.19</td>
         </tr>
         <tr>
-            <td>pricestyle.css</td>
-            <td>Style of price table</td>
-            <td>Fredrik</td>
-            <td>21.10.19</td>
+            <td>styleprices.css</td>
+            <td>Style of the price guidelines page</td>
+            <td>Fredrik and Martin</td>
         </tr>
         <tr>
             <td>aboutstyle.css</td>
             <td>Style of the about page</td>
             <td>Martin</td>
-            <td>21.10.19</td>
         </tr>
         <tr>
             <td>shopForm.js</td>
             <td>Submits the order and displays the details to the user</td>
             <td>Tormod</td>
-            <td>28.10.19</td>
         </tr>
         <tr>
             <td>slideshow.js</td>
             <td>Slideshow displaying images on the homepage</td>
-            <td>Henrik L.</td>
-            <td>28.10.19</td>
+            <td>Tormod</td>
         </tr>
         <tr>
-            <td>galleryLoader.js</td>
-            <td>Loads more images in the gallery</td>
-            <td>Henrik W. and Martin</td>
-            <td>28.10.19</td>
+            <td>gallery.js</td>
+            <td>Loads images into the gallery and displays a picture at high resolution when clicked with option to buy print.</td>
+            <td>Henrik W.</td>
         </tr>
         <tr>
-            <td>picturePopUp.js</td>
-            <td>Displays a picture at high resolution when clicked with option to buy print</td>
+            <td>prices.js</td>
+            <td>Interactive pricing tool</td>
             <td>Fredrik</td>
-            <td>28.10.19</td>
+        </tr>
+        <tr>
+            <td>favicon.png / rb_logo_black.svg</td>
+            <td>Logo and icon for the website</td>
+            <td>Henrik W.</td>
+        </tr>
+        <tr>
+            <td>robboss.png</td>
+            <td>A happy little painting of Rob Boss</td>
+            <td>Tormod</td>
+        </tr>
+        <tr>
+            <td>All pictures</td>
+            <td>Every photo used is taken by Henrik L.</td>
+            <td>Henrik L.</td>
         </tr>
       </table>
     </div>
