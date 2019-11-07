@@ -3,11 +3,13 @@ body{
     background-image: url("../img/homepage/img3.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    margin:0 0 0;
 }
 
 div{
     background-color: #fafaff;
-    padding: 15px 50px 15px 50px;
+    padding: 1.5px 50px 2vw 50px;
+    height:60vw;
 }
 
 #rob {
