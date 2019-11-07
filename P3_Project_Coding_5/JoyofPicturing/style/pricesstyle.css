@@ -1,9 +1,6 @@
 body{
-    background-position:center;
     background-image:url("../img/background/img4.jpg");
-    background-attachment: fixed;
-    background-size: 100%;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 div{

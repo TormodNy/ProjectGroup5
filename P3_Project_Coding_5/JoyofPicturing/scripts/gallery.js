@@ -1,11 +1,16 @@
 const imgNr = 14; //indicates how many images are to be added
 const galleryEl = document.querySelector(".gallery");
 
+//Previously galleryLoader.js
 for (var i = 1; i <= imgNr; i++) {
+    addPicture(i);
+}
+
+function addPicture (i) {
     //adding images and creating div elements
     const newDiv = makeElement("div", "", "", "imgWrapper");
     const newImg = makeElement("img", "", "img" + i, "galleryImg")
-    newImg.src = "img/resized/" + i + ".jpg";
+    newImg.src = "img/gallery/" + i + ".jpg";
     newImg.alt = "Thumbnail " + i;
     newDiv.appendChild(newImg);
     galleryEl.appendChild(newDiv);
@@ -13,7 +18,32 @@ for (var i = 1; i <= imgNr; i++) {
     newImg.addEventListener("click", preview);
 }
 
+//Checks when the user is scrolling
+window.onscroll = scrolling;
 
+//Number of times the user has scrolled enough to add more pictures
+let timesAdded = 1;
+
+function scrolling () {
+    //A value describing how far the user has scrolled
+    const scrollTop = document.documentElement.scrollTop;
+
+    //Add 3 photos if we are using widescreen, 1 if we are a smaller screen or in a portrait view
+    const maxPhotos = (window.innerWidth > 900 || window.screen.orientation == "landscape-primary")? 3 : 1;
+
+    //If the user has scrolled more than the height of one image, add more images if we haven't added 30 or more pictures
+    if(scrollTop > galleryEl.children[0].offsetHeight * timesAdded / maxPhotos && timesAdded < 30){
+        for (var i = 0; i < maxPhotos; i++) {
+            //Adds a random photo
+            addPicture(Math.ceil(Math.random() * 14));
+        }
+        timesAdded += maxPhotos;
+    }
+}
+
+
+
+//Previously picturePopUp.js
 function preview(e) {
     const bodyEl = document.querySelector("body");
 
@@ -60,7 +90,7 @@ function preview(e) {
     contentWrapperEl.appendChild(previewButtonEl);
 
     //appending preview div to body
-    bodyEl.appendChild(previewDivEl);    
+    bodyEl.appendChild(previewDivEl);
 
     //exits preview if user clicks outside of the preview element or the x
     closePreviewEl.addEventListener("click", exitPreview);
@@ -76,7 +106,7 @@ function preview(e) {
         if(e.keyCode == 27) {
             previewDivEl.parentElement.removeChild(previewDivEl);
             backgroundDivEl.parentElement.removeChild(backgroundDivEl);
-        }   
+        }
 
     }
 
