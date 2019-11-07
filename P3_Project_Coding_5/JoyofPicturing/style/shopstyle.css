@@ -3,6 +3,7 @@ body{
     background-image:url("../img/background/img2.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    margin: 0 0 0 0;
 }
 
 h2{
@@ -11,10 +12,9 @@ h2{
 
 div{
     width: 33%;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 50px 15vw 50px;
     background-color: #fafaff;
     position: relative;
-    margin-bottom: -50px;
     z-index: -2;
 }
 
