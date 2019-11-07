@@ -11,6 +11,10 @@ body{
     padding: 50px 0 25px;
     background-color: #fafaff;
     color: #222222;
+
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 footer{

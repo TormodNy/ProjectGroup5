@@ -1,7 +1,15 @@
 const slideshowEl = document.querySelector("#slideshow");
 
 let photoIndex = 1;
-const photoFiles = ["img/resized/1.jpg", "img/resized/2.jpg", "img/resized/3.jpg", "img/resized/4.jpg"];
+let photoFiles = [];
+let fileIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+for(i = 0; i < 14; i++){
+    const index = Math.floor(Math.random() * fileIndex.length);
+    photoFiles.push("img/gallery/" + fileIndex[index] + ".jpg");
+    fileIndex.splice(index, 1);
+}
+
 const photoEl = document.querySelectorAll(".photo");
 
 //Starts a 6 seconds long animation that fades in and out
