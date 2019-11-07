@@ -3,13 +3,13 @@ body{
     background-image:url("../img/background/img4.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    margin: 0 0 0 0;
 }
 
 div{
     background-color: #fafaff;
     vertical-align: top;
-    padding: 15px 50px 15px 50px;
-    margin-bottom: -25px;
+    padding: 1.5px 50px 4vw 50px;
 }
 
 table{
